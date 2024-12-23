@@ -1,0 +1,1246 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.header{
+    min-height: 70px;
+    width: 100%;
+    background-color: #2f3130;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+
+label i{
+    font-size: 25px;
+}
+
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navlist{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.navlist a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+}
+
+.navlist a:hover{
+    color: #ffae00;
+    text-decoration: underline;
+}
+
+
+/* //////////////////////////  Main Section /////////////////////////////  */
+
+/* /////////// Green Box  */
+.green-box{
+    height: 60px;
+    width: 30%;
+    background-color: #00ff00;
+    border-radius: 10px;
+    position: absolute;
+    top: 72.6%;
+    left: 34%;
+    z-index: -1;
+}
+
+/*  ////////// Green Box end */
+
+
+
+/* ///////  Banner and text Section  */
+#main{
+    width: 100%;
+}
+
+
+.hero-section{
+    min-height: 70vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(46, 57, 111, 0.7), rgba(8, 18, 54, 0.7)), url(images/bg-image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    color: #fff;
+    margin-top: 70px;
+}
+
+.text-1{
+    font-size: 36px;
+    margin-top: 25px;
+}
+.text-2{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.button{
+    margin-top: 50px;
+    height: 40px;
+    width: 200px;
+    background: transparent;
+    border: 1px solid red;
+    color: #fff;
+    font-size: 16px;
+}
+
+.button:hover{
+    background-color: red;
+    transition: 0.6s linear;
+}
+
+
+
+/* ///////////////////////// Watches Section Starts ////////////////////////////*/
+
+
+.watches-section{
+    width: 75%;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 1px 1px 2px lightgray;
+    padding: 10px;
+}
+
+
+/* /////// Container Heading  and Text /////// */
+.watches-section h3{
+    font-size: 30px;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+.watches-section h3:hover{
+    color: red;
+    transition: 0.5s linear;
+}
+.watches-section .watch-para:hover{
+    color: red;
+    transition: 0.5s linear;
+}
+
+
+/* //////////// Container Images */
+.image-container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+.images{
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.images:hover{
+    background-color: rgba(250, 235, 215, 0.537);
+    box-shadow: 1px 1px 10px #ffae0090;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.images p{
+    width: 100%;
+    text-align: start;
+}
+
+.images img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+
+/* ////////////  Container Buttons */
+
+.images button{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.images .price{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #ffae00;
+    background-color: #fff;
+    transition: 0.5s ease-out;
+    color: #ff0000;
+}
+
+.images .price:hover{
+    background-color: #ffae00;
+    border: 3px solid #ffae00;
+    color: #fff;
+    cursor: pointer;
+}
+
+.images .shop{
+    width: 150px;
+    height: 40px;
+    font-size: 17px;
+    color: black;
+    background-color: transparent;
+    border-color: red;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.images .shop:hover{
+    background-color: #ff0000;
+    border: 3px solid #db00be;
+    color: #fff;
+}
+
+
+/* ///////////////////  Footer //////////////// */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid #d3d3d3;
+    padding: 30px 0px;
+    gap: 8px;
+    background-color: #f0f0f0;
+}
+
+.footer-img{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+footer p{
+    word-spacing: 3px;
+}
+
+.footer-img img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.hearts{
+    color: #ff0000;
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////   Men's Watches Banner Section */
+
+.men-sec-text-1{
+    font-size: 36px;
+}
+.men-sec-text-2{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+/* ////////////////////////////////////   Women Watches Banner Section */
+
+.women-sec-1{
+    font-size: 36px;
+}
+.women-sec-2{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+
+/* //////////////////////////////////// ////////////////  About Us  */
+
+.about-section{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    margin: 70px 0px;
+}
+.about-section .about-para{
+    width: 50%;
+    text-align: left;
+    line-height: 1.3rem;
+}
+.about-section .about-para h3{
+    padding-bottom: 30px;
+}
+
+.about-img{
+    width: 50%;
+}
+
+.about-img img{
+    width: 100%;
+}
+
+
+/* ///// Banner Text */
+.about-1{
+    font-size: 40px;
+}
+.about-2{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////  Blog */
+
+
+.watches-section-blog{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blog-main-heading{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.blog-text-heading{
+    font-size: 25px;
+    line-height: 30px;
+}
+
+
+/* //////// Blog Form */
+
+.form-sec{
+    margin: 80px 0px;
+}
+
+.blog-form{
+    border:1px solid red;
+    width: 50%;
+    padding: 60px 0px;
+    padding-left: 20px;
+}
+
+.blog-form input,textarea{
+    outline: none;
+}
+
+.blog-form input{
+    width: 90%;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    margin-top: 30px;
+}
+
+
+.blog-form textarea{
+    margin-top: 30px;
+    height: 150px;
+    width: 90%;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+}
+
+.blog-button{
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    color: red;
+    background: transparent;
+    border: 1px solid red;
+    transition: 0.5s ease-in;
+}
+
+.blog-button:hover{
+    background-color: red;
+    color: #fff;
+}
+
+/* //////////////////////////////////////  Contact Section */
+
+
+.contact-section{
+    margin: 60px 0px;
+}
+.contact-section iframe{
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.address,.phone,.mail{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.icon{
+    font-size: 60px;
+    color: red;
+}
+.address-text{
+    font-size: 20px;
+}
+
+.line-break{
+    display: block;
+}
+
+
+/* /////////  Contact Form */
+
+.contact-form-sec{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    box-shadow: 1px 1px 10px lightgrey;
+    border-radius: 10px;
+    padding: 50px 0px;
+}
+
+.contact-form{
+    border: 1px solid red;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.contact-form input{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    outline: none;
+    background-color: #f0f0f0;
+    border: none;
+}
+
+.contact-form textarea{
+    padding: 10px;
+    width: 95%;
+    height: 130px;
+    border: none;
+    background-color: #f0f0f0;
+
+}
+
+.contact-btn{
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    color: red;
+    background: transparent;
+    border: 1px solid red;
+    transition: 0.5s ease-in;
+}
+
+.contact-btn:hover{
+    background-color: red;
+    color: #fff;
+}
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////  Media Queries ///////////////////////////////////// ///////////////////////////////////// */
+
+
+/* /////////// Media Queries for Banner and text Section /////////////// */
+
+/*  //////////////////////////////////////////   Media Queries For 1100px */
+@media(max-width:1100px){
+    .text-1{
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .text-2{
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+    .button{
+        margin-top: 20px;
+    }
+
+    /* ///////////// Watch Section */
+    
+    .images img{
+        height: 300px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .watches-section{
+        width: 85%;
+    }
+
+    .watches-section .remove{
+        display: none;
+    }
+
+
+
+
+
+    /* /////////////////////////////////////------------------   Men's Watches Section  */
+    .men-sec-text-2{
+        font-size: 16px;
+    }
+
+
+    /* /////////////////////////////////////------------------   Women Watches Section  */
+    .women-sec-1{
+        font-size: 30px;
+    }
+    .women-sec-2{
+        font-size: 16px;
+    }
+
+
+    /* /////////////////////////////////////-------------------- About Us Banner Text */
+
+
+    .about-2{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .about-text-heading{
+        line-height: 30px;
+    }
+}
+
+/*  //////////////////////////////////////////////////  Media Queries For 870px */
+
+@media(max-width:870px){
+    .text-1{
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .text-2{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .hero-section span{
+        font-size: 14px;
+    }
+    .button{
+        margin-top: 20px;
+    }
+
+    /* //// For Header Section */
+
+    .heading{
+        font-size: 25px;
+    }
+    .navlist{
+        display: flex;
+        gap: 10px;
+    }
+    .navlist a{
+        font-size: 14px;
+    }
+
+    /* ///////////////  Banner Section */
+
+    .hero-section{
+        min-height: 55vh;
+    }
+
+    .green-box{
+        position: absolute;
+        top: 56.6%;
+    }
+
+    /* /////////////////  watches Section */
+    .watches-section{
+        width: 90%;
+    }
+    .image-container{
+        display: flex;
+        /* height: 500px; */
+        gap: 15px;
+    }
+    .images img{
+        height: 230px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+
+
+      /* ////////////////////////////////////////--------------   Men's Watches Section  */
+      .men-sec-text-2{
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .men-sec-text-2 span{
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+    }
+
+    
+    /* /////////////////////////////////////------------------   Women Watches Section  */
+    .women-sec-1{
+        font-size: 24px;
+    }
+    .women-sec-2{
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+
+    /* ////////////////////////////////////////--------------------- About Us Banner Sec */
+    
+    .about-2,span{
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .about-2 span{
+        font-size: 14px;
+    }
+
+    .about-text-remove{
+        display: none;
+    }
+
+    /* ////////////////////////////////////////////////////   COntact Section */
+
+    .contact-section iframe{
+        height: 300px;
+    }
+    .contact-form-sec{
+        width: 90%;
+    }
+    
+    
+}
+
+/*  //////////////////////////////////////////////////  Media Queries For 730px */
+
+@media(max-width:730px){
+    .text-1{
+        font-size: 28px;
+        font-weight: lighter;
+    }
+    .text-2{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .hero-section span{
+        font-size: 13px;
+    }
+    .button{
+        margin-top: 20px;
+    }
+
+    /* //// For Header Section */
+    .heading{
+        font-size: 20px;
+    }
+
+    .navlist a{
+        font-size: 12px;
+    }
+    .images img{
+        height: 210px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    /* /////////////////////////////////////-------------------- blog */
+    .blog-remove{
+        display: none;
+    }
+
+    /* /////   blog form */
+    form{
+        border:1px solid red;
+        width: 80%;
+        padding: 60px 0px;
+        padding-left: 20px;
+    }
+    label input{
+        width: 85%;
+        padding: 7px;
+        margin-top: 25px;
+    }
+
+    textarea{
+    margin-top: 30px;
+    height: 100px;
+    width: 85%;
+    padding: 10px;
+    }
+    .blog-button{
+        margin-top: 40px;
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+        color: red;
+    }
+
+
+    /* ////////////////////////////////////////////////////   Contact Section */
+
+    .contact-1{
+        font-size: 30px;
+    }
+    .contact-2{
+        font-size: 18px;
+        text-align: center;
+    }
+    .contact-2 span{
+        display: block;
+        font-size: 14px;
+        padding-top: 4px;
+        text-align: center;
+    }
+    
+}
+
+/* /////////////////////////////////////////// / Media Queries for 652px /////////////// */
+
+@media (max-width:652px){
+    .navlist{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-top: 15px;
+        gap: 0;
+    }
+    .navlist li{
+        padding: 10px;
+        width: 100%;
+    }
+
+    .navlist li:hover{
+        background-color: blue;
+    }
+    .links-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        background-color: #2f3130;
+        width: 250px;
+        padding: 25px 15px;
+        transition: 0.8s ease-in;
+    }
+    .bx-menu{
+        padding-right: 20px;
+    }
+    .open-sidebar-button, .close-sidebar-button{
+        display: block;
+    }
+    .open-sidebar, .close-sidebar{
+        display: block;
+    }
+    #sidebar-active:checked ~ .links-container{
+        right: 0;
+    }
+
+    /*/////////// Banner Image Responsive */
+
+    .hero-section{
+        min-height: 50vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(42,52,100,0.7), rgba(4,9,30,0.7)), url(images/bg.jpeg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+        color: #fff;
+    }
+
+    .green-box{
+        position: absolute;
+        top: 51.6%;
+    }
+    
+
+    /* //////////  Banner Text Responsive */
+
+    .text-1{
+        font-size: 22px;
+    }
+    .text-2{
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    .hero-section span{
+        font-size: 13px;
+    }
+    .button{
+        width: 140px;
+        font-size: 10px;
+        height: 30px;
+    }
+
+    /* /////////////   Watches section */
+    .images img{
+        height: 160px;
+    }
+    .images .shop{
+        width: 100px;
+        font-size: 14px;
+        height: 30px;
+    }
+    .images .price{
+        width: 70px;
+        font-size: 12px;
+    }
+
+    /* //////// Footer   */
+    .footer-img img{
+        width: 40px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+
+    /* ////////////////////////////////////////---------------------  Men'Watches Banner Sec */
+
+    .men-sec-text-1{
+        font-size: 25px;
+    }
+
+        
+    /* /////////////////////////////////////------------------   Women Watches Section  */
+    .women-sec-1{
+        font-size: 20px;
+    }
+    .women-sec-2{
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+    
+    /* ////////////////////////////////////////--------------------- About Us Banner Sec */
+    
+    .about-1{
+        font-size: 30px;
+    }
+
+    .about-2{
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .about-2 span{
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        padding-top: 5px;
+    }
+
+
+    /* /////////////////////////////////////////////--------------------------  Blog  */
+
+    .blog-remove{
+        display: none;
+    }
+
+    .blog-form{
+        width: 100%;
+    }
+
+
+        /* ////////////////////////////////////////////////////   COntact Section */
+
+    .contact-1{
+        font-size: 30px;
+    }
+    .contact-2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .contact-2 span{
+        display: block;
+        font-size: 14px;
+        padding-top: 4px;
+        text-align: center;
+    }
+
+    /* ///////// Contact form */
+
+    .contact-section iframe{
+        height: 300px;
+    }
+    .contact-form-sec{
+        width: 100%;
+    }
+    
+    .contact-form input {
+        margin-bottom: 17px;
+    }
+    .contact-form textarea {
+        margin-top: 14px;
+    }
+    .contact-btn{
+        margin-top: 15px;
+    }
+}
+
+/* ///////////////////////////////////////////////////// For 490px */
+
+@media (max-width: 490px){
+    .text-1{
+        font-size: 20px;
+    }
+    .text-2{
+        font-size: 15px;
+    }
+    .hero-section span{
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+        font-size: 10px;
+        padding-left: 30px;
+    }
+    .button{
+        margin-top: 10px;
+    }
+
+    /*/////// Header Menu Width */
+
+    .links-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        background-color: #2f3130;
+        width: 180px;
+        padding: 25px 15px;
+        transition: 0.8s ease-in;
+    }
+
+    /* ////////////////  Banner section */
+
+    .hero-section{
+        min-height: 50vh;
+    }
+
+    .green-box{
+        position: absolute;
+        top: 52.5%;
+    }
+
+
+    /* ////////// Watches Section ////////// */
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .images{
+        width: 80%;
+        
+    }
+    .images img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .images .remove{
+        display: block;
+    }
+
+    /* /////// Footer  ///// */
+
+    footer p{
+        font-size: 13px;
+    }
+
+    
+      /* ////////////////////////////////////////////----------- Men's Watches Section  */
+      .men-sec-text-2{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .men-sec-text-2 span{
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+    }
+
+
+      /* ////////////////////////////////////////////----------- Women's Watches Section  */
+      .women-sec-1{
+        font-size: 17px;
+      }
+      .women-sec-2 span{
+        display: flex;
+        justify-content: center;
+      }
+
+
+      /* ////////////////////////////////////////--------------------- About Us Banner Sec */
+    
+    .about-1{
+        font-size: 25px;
+    }
+
+    .about-2{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .about-2 span{
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        padding-top: 5px;
+    }
+
+    /* //////////////////   About   Content Sec*/
+    .about-section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-section .about-para{
+        width: 100%;
+    }
+    .about-text-remove{
+        display: block;
+    }
+
+    .about-img{
+        width: 100%;
+    }
+
+
+    /* /////// //////////////////////////////////////////////////////////////  Blog Section*/
+
+    .blog-text-remove{
+        display: none;
+    }
+
+    /* /////   blog form */
+
+    .blog-form{
+        border:1px solid red;
+        width: 100%;
+        padding: 60px 0px;
+        padding-left: 20px;
+    }
+
+        /* ////////////////////////////////////////////////////   COntact Section */
+
+    .contact-1{
+        font-size: 30px;
+    }
+    .contact-2{
+        font-size: 16px;
+        text-align: center;
+    }
+    .contact-2 span{
+        display: block;
+        font-size: 10px;
+        padding-top: 4px;
+        text-align: center;
+    }
+
+    .address, .phone, .mail {
+        display: flex
+    ;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+}
+
+/* /////////////// ////////////////////////////////// For 370px */
+
+@media (max-width: 370px){
+
+    /*  Header */
+    .heading{
+        font-size: 26px;
+    }
+    .heading img{
+        width: 60px;
+    }
+
+    /* // Banner text */
+    .text-1{
+        font-size: 16px;
+    }
+    .text-2{
+        font-size: 13px;
+    }
+    .text-2 span{
+        font-size: 10px;
+        padding-left: 0px;
+    }
+    .button{
+        margin-top: 10px;
+    }
+
+    /*/////// Header Menu Width */
+
+    .links-container{
+       width: 140px;
+    }
+
+
+    /* //  Banner image height */
+    .hero-section{
+        min-height: 40vh;
+    }
+
+    /* ////////////  Green Box */
+    .green-box{
+        height: 60px;
+        width: 45%;
+        background-color: #00ff00;
+        border-radius: 10px;
+        position: absolute;
+        top: 42.6%;
+        left: 30%;
+        z-index: -1;
+    }
+
+    /* ////////////// Watches images section */
+
+    .images img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    
+      /* //////////////////////////////////////----------------  Men's Watches Section  */
+
+    .men-sec-text-1{
+        font-size: 20px;
+    }
+      .men-sec-text-2{
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .men-sec-text-2 span{
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+        font-size: 10px;
+    }
+
+
+     /* ////////////////////////////////////////////----------- Women's Watches Section  */
+     .women-sec-1{
+        font-size: 15px;
+      }
+      .women-sec-2{
+        font-size: 8px;
+      }
+      .women-sec-2 span{
+        font-size: 8px;
+      }
+
+
+      /* ////////////////////////////////////////--------------------- About Us Banner Sec */
+    
+    .about-1{
+        font-size: 25px;
+    }
+
+    .about-2{
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .about-2 span{
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        padding-top: 5px;
+    }
+
+
+     /* /////// Footer  ///// */
+
+     footer p{
+        font-size: 12px;
+    }
+
+}
