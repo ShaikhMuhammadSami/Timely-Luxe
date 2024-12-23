@@ -998,6 +998,9 @@ footer p{
     .hero-section{
         min-height: 50vh;
     }
+    .text-1{
+        font-weight: 600;
+    }
 
     .green-box{
         position: absolute;
